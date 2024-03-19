@@ -16,7 +16,6 @@ namespace GitWorkFlowTutorial
         public Form1()
         {
             InitializeComponent();
-           
         }
 
         public BindingList<User> Users = new BindingList<User>();
@@ -33,8 +32,7 @@ namespace GitWorkFlowTutorial
                     BirthDay = DateTime.Now,
                 });
             }
-           
-           
+            vGridControl1.DataSource = Users;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)

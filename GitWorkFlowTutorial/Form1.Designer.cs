@@ -34,12 +34,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -58,11 +52,22 @@
             this.ItemForAddress = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.vGridControl1 = new DevExpress.XtraVerticalGrid.VGridControl();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
+            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.category = new DevExpress.XtraVerticalGrid.Rows.CategoryRow();
+            this.row = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.row1 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.category1 = new DevExpress.XtraVerticalGrid.Rows.CategoryRow();
+            this.row2 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.row3 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
+            this.row4 = new DevExpress.XtraVerticalGrid.Rows.EditorRow();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -81,7 +86,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.AddressTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAddress)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -90,11 +101,11 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.ItemSize = new System.Drawing.Size(120, 40);
+            this.tabControl1.ItemSize = new System.Drawing.Size(200, 40);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(817, 648);
+            this.tabControl1.Size = new System.Drawing.Size(1214, 648);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -106,86 +117,28 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(809, 600);
+            this.tabPage1.Size = new System.Drawing.Size(1206, 600);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DataLayoutControlDome";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.vGridControl1);
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(809, 600);
+            this.tabPage2.Size = new System.Drawing.Size(1206, 600);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "用户管理";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(425, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(294, 25);
-            this.textBox3.TabIndex = 2;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(725, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(76, 43);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "查找";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(171, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 43);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "修改";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(90, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 43);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "删除";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(9, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 43);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "添加";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 56);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(795, 536);
-            this.dataGridView1.TabIndex = 0;
             // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(809, 600);
+            this.tabPage3.Size = new System.Drawing.Size(1206, 600);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "线体管理";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -248,7 +201,7 @@
             this.IdSpinEdit.Properties.MaskSettings.Set("mask", "N0");
             this.IdSpinEdit.Size = new System.Drawing.Size(202, 24);
             this.IdSpinEdit.StyleController = this.dataLayoutControl1;
-            this.IdSpinEdit.TabIndex = 4;
+            this.IdSpinEdit.TabIndex = 0;
             // 
             // ItemForId
             // 
@@ -266,7 +219,7 @@
             this.NameTextEdit.Name = "NameTextEdit";
             this.NameTextEdit.Size = new System.Drawing.Size(202, 24);
             this.NameTextEdit.StyleController = this.dataLayoutControl1;
-            this.NameTextEdit.TabIndex = 5;
+            this.NameTextEdit.TabIndex = 2;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule1.ErrorText = "这个值不能为空";
             this.dxValidationProvider1.SetValidationRule(this.NameTextEdit, conditionValidationRule1);
@@ -292,7 +245,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.BirthDayDateEdit.Size = new System.Drawing.Size(202, 24);
             this.BirthDayDateEdit.StyleController = this.dataLayoutControl1;
-            this.BirthDayDateEdit.TabIndex = 6;
+            this.BirthDayDateEdit.TabIndex = 3;
             conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule2.ErrorText = "This value is not valid";
             this.dxValidationProvider1.SetValidationRule(this.BirthDayDateEdit, conditionValidationRule2);
@@ -314,7 +267,7 @@
             this.PicturePictureEdit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.PicturePictureEdit.Size = new System.Drawing.Size(274, 243);
             this.PicturePictureEdit.StyleController = this.dataLayoutControl1;
-            this.PicturePictureEdit.TabIndex = 7;
+            this.PicturePictureEdit.TabIndex = 1;
             // 
             // ItemForPicture
             // 
@@ -338,7 +291,7 @@
             this.AddressTextEdit.Name = "AddressTextEdit";
             this.AddressTextEdit.Size = new System.Drawing.Size(202, 24);
             this.AddressTextEdit.StyleController = this.dataLayoutControl1;
-            this.AddressTextEdit.TabIndex = 8;
+            this.AddressTextEdit.TabIndex = 4;
             // 
             // ItemForAddress
             // 
@@ -376,15 +329,113 @@
             this.comboBoxEdit1.Size = new System.Drawing.Size(272, 24);
             this.comboBoxEdit1.TabIndex = 2;
             // 
+            // vGridControl1
+            // 
+            this.vGridControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.vGridControl1.DataSource = this.userBindingSource;
+            this.vGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vGridControl1.Location = new System.Drawing.Point(3, 3);
+            this.vGridControl1.Name = "vGridControl1";
+            this.vGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemSpinEdit1,
+            this.repositoryItemTextEdit1,
+            this.repositoryItemDateEdit1,
+            this.repositoryItemPictureEdit1});
+            this.vGridControl1.RowHeaderWidth = 230;
+            this.vGridControl1.Rows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
+            this.category,
+            this.category1});
+            this.vGridControl1.Size = new System.Drawing.Size(1200, 594);
+            this.vGridControl1.TabIndex = 4;
+            // 
             // userBindingSource
             // 
             this.userBindingSource.DataSource = typeof(GitWorkFlowTutorial.User);
+            // 
+            // repositoryItemSpinEdit1
+            // 
+            this.repositoryItemSpinEdit1.AutoHeight = false;
+            this.repositoryItemSpinEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemSpinEdit1.Name = "repositoryItemSpinEdit1";
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
+            // repositoryItemDateEdit1
+            // 
+            this.repositoryItemDateEdit1.AutoHeight = false;
+            this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.Name = "repositoryItemDateEdit1";
+            // 
+            // repositoryItemPictureEdit1
+            // 
+            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
+            // 
+            // category
+            // 
+            this.category.ChildRows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
+            this.row,
+            this.row1});
+            this.category.Name = "category";
+            this.category.Properties.Caption = "用户";
+            // 
+            // row
+            // 
+            this.row.Name = "row";
+            this.row.Properties.Caption = "ID";
+            this.row.Properties.FieldName = "Id";
+            this.row.Properties.RowEdit = this.repositoryItemSpinEdit1;
+            // 
+            // row1
+            // 
+            this.row1.Name = "row1";
+            this.row1.Properties.Caption = "用户名称";
+            this.row1.Properties.FieldName = "Name";
+            this.row1.Properties.RowEdit = this.repositoryItemTextEdit1;
+            // 
+            // category1
+            // 
+            this.category1.ChildRows.AddRange(new DevExpress.XtraVerticalGrid.Rows.BaseRow[] {
+            this.row2,
+            this.row3,
+            this.row4});
+            this.category1.Name = "category1";
+            this.category1.Properties.Caption = "附加信息";
+            // 
+            // row2
+            // 
+            this.row2.Height = 22;
+            this.row2.Name = "row2";
+            this.row2.Properties.Caption = "地址";
+            this.row2.Properties.FieldName = "Address";
+            this.row2.Properties.RowEdit = this.repositoryItemTextEdit1;
+            // 
+            // row3
+            // 
+            this.row3.Height = 22;
+            this.row3.Name = "row3";
+            this.row3.Properties.Caption = "生日";
+            this.row3.Properties.FieldName = "BirthDay";
+            this.row3.Properties.RowEdit = this.repositoryItemDateEdit1;
+            // 
+            // row4
+            // 
+            this.row4.Name = "row4";
+            this.row4.Properties.Caption = "照片";
+            this.row4.Properties.FieldName = "Picture";
+            this.row4.Properties.RowEdit = this.repositoryItemPictureEdit1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 648);
+            this.ClientSize = new System.Drawing.Size(1214, 648);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -392,8 +443,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -412,7 +461,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.AddressTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForAddress)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,12 +477,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tabPage3;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
@@ -447,6 +496,18 @@
         private DevExpress.XtraLayout.LayoutControlItem ItemForAddress;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraVerticalGrid.VGridControl vGridControl1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryItemSpinEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
+        private DevExpress.XtraVerticalGrid.Rows.CategoryRow category;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow row;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow row1;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow row2;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow row3;
+        private DevExpress.XtraVerticalGrid.Rows.EditorRow row4;
+        private DevExpress.XtraVerticalGrid.Rows.CategoryRow category1;
     }
 }
 
